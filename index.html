@@ -3,795 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Malak Mohamed - Web & Mobile App Developer specializing in websites, mobile apps, business systems, UI/UX, and database-driven solutions."
-    />
-    <meta
-      name="keywords"
-      content="Malak Mohamed, portfolio, web developer, mobile app developer, UI/UX, database systems, business applications"
-    />
+    <meta name="description" content="Malak Mohamed - Web & Mobile App Developer specializing in Wasla business management system, websites, mobile apps, UI/UX, and database solutions." />
+    <meta name="keywords" content="Malak Mohamed, Wasla, portfolio, web developer, mobile app developer, UI/UX, database systems" />
     <meta name="author" content="Malak Mohamed" />
     <meta property="og:title" content="Malak Mohamed | Web & Mobile App Developer" />
-    <meta property="og:description" content="Professional portfolio of Malak Mohamed, a Web & Mobile App Developer." />
+    <meta property="og:description" content="Professional portfolio featuring Wasla - Business Management System" />
     <meta property="og:type" content="website" />
     <title>Malak Mohamed | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      :root {
-        --bg: #0b1020;
-        --bg-soft: #111827;
-        --panel: rgba(17, 24, 39, 0.9);
-        --surface: rgba(255, 255, 255, 0.04);
-        --primary: #edf4ff;
-        --text: #dfe9fb;
-        --muted: #a7b4cf;
-        --accent: #5aa8ff;
-        --accent-soft: rgba(90, 168, 255, 0.12);
-        --border: rgba(255, 255, 255, 0.08);
-        --shadow: 0 18px 38px rgba(2, 6, 23, 0.5);
-        --success: #8fe3a3;
-        --radius: 22px;
-      }
-
-      * { box-sizing: border-box; }
-
-      html {
-        scroll-behavior: smooth;
-      }
-
-      body {
-        margin: 0;
-        font-family: "Inter", "Segoe UI", sans-serif;
-        background:
-          radial-gradient(circle at top left, rgba(90, 168, 255, 0.12), transparent 28%),
-          linear-gradient(180deg, var(--bg) 0%, #0d1320 100%);
-        color: var(--text);
-        line-height: 1.7;
-        overflow-x: hidden;
-      }
-
-      img {
-        max-width: 100%;
-        display: block;
-      }
-
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-
-      ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-
-      p, h1, h2, h3, h4, h5, h6 {
-        margin: 0;
-      }
-
-      .container {
-        width: min(1140px, calc(100% - 32px));
-        margin: 0 auto;
-      }
-
-      .section {
-        padding: 96px 0;
-      }
-
-      .section-header {
-        margin-bottom: 36px;
-      }
-
-      .section-tag {
-        display: inline-block;
-        padding: 8px 12px;
-        border-radius: 999px;
-        background: rgba(90, 168, 255, 0.12);
-        border: 1px solid rgba(90, 168, 255, 0.16);
-        color: var(--accent);
-        font-size: 0.72rem;
-        font-weight: 700;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-      }
-
-      .section-title {
-        font-size: clamp(2rem, 4vw, 3rem);
-        line-height: 1.1;
-        letter-spacing: -0.06em;
-        color: var(--primary);
-      }
-
-      .site-header {
-        position: sticky;
-        top: 0;
-        z-index: 30;
-        background: rgba(10, 15, 24, 0.82);
-        backdrop-filter: blur(14px);
-        border-bottom: 1px solid var(--border);
-      }
-
-      .nav-bar {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        min-height: 78px;
-      }
-
-      .logo {
-        font-size: 1.7rem;
-        font-weight: 800;
-        color: var(--primary);
-      }
-
-      .logo span {
-        color: var(--accent);
-      }
-
-      .nav-links {
-        display: flex;
-        align-items: center;
-        gap: 28px;
-      }
-
-      .nav-links a {
-        color: var(--muted);
-        font-weight: 500;
-        transition: color 0.2s ease;
-      }
-
-      .nav-links a:hover,
-      .nav-links a:focus-visible {
-        color: var(--primary);
-      }
-
-      .nav-cta,
-      .primary-btn,
-      .secondary-btn {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 999px;
-        transition: transform 0.18s ease, box-shadow 0.18s ease;
-      }
-
-      .nav-cta,
-      .primary-btn {
-        background: linear-gradient(135deg, var(--accent), #7bb5ff);
-        color: #06131f;
-        box-shadow: 0 16px 30px rgba(90, 168, 255, 0.2);
-      }
-
-      .nav-cta {
-        padding: 12px 20px;
-        font-weight: 700;
-      }
-
-      .primary-btn {
-        padding: 16px 24px;
-        font-weight: 700;
-      }
-
-      .secondary-btn {
-        padding: 16px 24px;
-        border: 1px solid var(--border);
-        background: rgba(255,255,255,0.02);
-        color: var(--primary);
-      }
-
-      .hero {
-        padding: 70px 0 76px;
-      }
-
-      .hero-inner {
-        display: grid;
-        grid-template-columns: 1.15fr 0.85fr;
-        gap: 44px;
-        align-items: center;
-      }
-
-      .hero-copy .eyebrow {
-        display: inline-block;
-        margin-bottom: 18px;
-        color: var(--accent);
-        font-weight: 700;
-        text-transform: uppercase;
-        font-size: 0.8rem;
-        letter-spacing: 0.12em;
-      }
-
-      .hero-copy h1 {
-        font-size: clamp(2.8rem, 6vw, 5rem);
-        line-height: 0.98;
-        letter-spacing: -0.06em;
-        color: var(--primary);
-        max-width: 680px;
-      }
-
-      .hero-copy p {
-        margin-top: 22px;
-        font-size: 1.08rem;
-        color: var(--muted);
-        max-width: 620px;
-      }
-
-      .cta-group {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 16px;
-        margin-top: 28px;
-      }
-
-      .hero-tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 12px;
-        margin-top: 28px;
-      }
-
-      .hero-tags span {
-        display: inline-flex;
-        align-items: center;
-        padding: 8px 12px;
-        border-radius: 999px;
-        background: rgba(255,255,255,0.03);
-        border: 1px solid var(--border);
-        color: var(--primary);
-        font-size: 0.8rem;
-        font-weight: 600;
-      }
-
-      .hero-visual {
-        display: flex;
-        justify-content: center;
-      }
-
-      .profile-card {
-        position: relative;
-        width: min(520px, 100%);
-        background: linear-gradient(180deg, rgba(18,27,43,0.95), rgba(13,18,29,0.96));
-        border:1px solid var(--border);
-        border-radius: 28px;
-        padding: 24px;
-        overflow: hidden;
-        box-shadow: var(--shadow);
-      }
-
-      .profile-card::before {
-        content: "";
-        position: absolute;
-        width: 180px;
-        height: 180px;
-        background: radial-gradient(circle, rgba(90,168,255,0.22), rgba(90,168,255,0.06));
-        border-radius: 50%;
-        top: -35px;
-        right: -30px;
-      }
-
-      .status-pill {
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        padding: 8px 12px;
-        border-radius: 999px;
-        background: rgba(255,255,255,0.03);
-        border: 1px solid var(--border);
-        color: var(--primary);
-        font-size: 0.8rem;
-        font-weight: 700;
-        margin-bottom: 18px;
-      }
-
-      .status-pill::before {
-        content: "";
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background: var(--success);
-        box-shadow: 0 0 0 8px rgba(143,227,163,0.14);
-      }
-
-      .code-panel {
-        position: relative;
-        z-index: 1;
-        background: rgba(7,12,18,0.9);
-        border:1px solid rgba(255,255,255,0.08);
-        border-radius: 20px;
-        overflow: hidden;
-      }
-
-      .code-panel-header {
-        display: flex;
-        gap: 8px;
-        padding: 12px 14px;
-        background: rgba(255,255,255,0.02);
-        border-bottom: 1px solid rgba(255,255,255,0.08);
-      }
-
-      .code-panel-header span {
-        width: 10px;
-        height:10px;
-        border-radius:50%;
-        background: rgba(255,255,255,0.5);
-      }
-
-      .code-panel-header span:nth-child(2) {
-        background: rgba(255,255,255,0.3);
-      }
-
-      .code-panel-header span:nth-child(3) {
-        background: rgba(255,255,255,0.2);
-      }
-
-      .code-panel pre {
-        margin: 0;
-        padding: 18px 20px 20px;
-        font-size: 0.88rem;
-        line-height: 1.8;
-        color: #dfe9ff;
-        overflow: auto;
-      }
-
-      .grid-2 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 32px;
-        align-items: center;
-      }
-
-      .about-copy {
-        color: var(--muted);
-        font-size: 1.05rem;
-      }
-
-      .about-copy p + p {
-        margin-top: 16px;
-      }
-
-      .cards-grid {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 24px;
-      }
-
-      .skill-card,
-      .project-card,
-      .service-card,
-      .stat-card {
-        background: rgba(255,255,255,0.02);
-        border: 1px solid var(--border);
-        border-radius: var(--radius);
-        box-shadow: var(--shadow);
-        padding: 24px 20px;
-      }
-
-      .skill-card h3 {
-        margin-bottom: 14px;
-        color: var(--primary);
-        font-size: 1.12rem;
-      }
-
-      .skill-card ul {
-        display: grid;
-        gap: 10px;
-        color: var(--muted);
-      }
-
-      .skill-card li::before {
-        content: "";
-        position: absolute;
-        width: 7px;
-        height: 7px;
-        border-radius: 50%;
-        background: var(--accent);
-      }
-
-      .skill-card li {
-        position: relative;
-        padding-left: 18px;
-      }
-
-      .project-card {
-        padding: 0;
-        overflow: hidden;
-      }
-
-      .project-card-image {
-        width: 100%;
-        height: 240px;
-        object-fit: cover;
-        background: linear-gradient(135deg, rgba(90,168,255,0.18), rgba(30,41,59,0.8));
-        display: block;
-      }
-
-      .project-card-content {
-        padding: 24px 20px 26px;
-      }
-
-      .project-card-content h3 {
-        color: var(--primary);
-        font-size: 1.6rem;
-        margin-bottom: 10px;
-      }
-
-      .project-card-content p {
-        color: var(--muted);
-      }
-
-      .project-meta {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin-top: 18px;
-      }
-
-      .project-meta span {
-        display: inline-flex;
-        align-items: center;
-        padding: 7px 10px;
-        border-radius: 999px;
-        background: rgba(255,255,255,0.04);
-        color: var(--primary);
-        font-size: 0.74rem;
-        font-weight: 600;
-      }
-
-      .featured-project {
-        display: grid;
-        grid-template-columns: 1.15fr 0.85fr;
-        gap: 28px;
-        align-items: center;
-        background: rgba(255,255,255,0.02);
-        border: 1px solid var(--border);
-        border-radius: 28px;
-        padding: 28px;
-        box-shadow: var(--shadow);
-      }
-
-      .featured-project img {
-        width: 100%;
-        height: 360px;
-        object-fit: cover;
-        border-radius: 20px;
-        background: linear-gradient(135deg, rgba(90,168,255,0.18), rgba(30,41,59,0.8));
-      }
-
-      .featured-project h3 {
-        color: var(--primary);
-        font-size: clamp(1.8rem, 2.5vw, 2.4rem);
-      }
-
-      .featured-project p {
-        color: var(--muted);
-      }
-
-      .featured-project .project-list {
-        display: grid;
-        gap: 10px;
-        margin-top: 18px;
-      }
-
-      .featured-project .project-list li {
-        position: relative;
-        padding-left: 18px;
-        color: var(--muted);
-      }
-
-      .featured-project .project-list li::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0.7em;
-        width: 7px;
-        height: 7px;
-        border-radius: 50%;
-        background: var(--accent);
-      }
-
-      .project-actions {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 12px;
-        margin-top: 22px;
-      }
-
-      .gallery-filter {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 12px;
-        margin: 18px 0 24px;
-      }
-
-      .filter-btn {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px 16px;
-        border-radius: 999px;
-        background: rgba(255,255,255,0.02);
-        border: 1px solid var(--border);
-        color: var(--muted);
-        font-weight: 600;
-        cursor: pointer;
-      }
-
-      .filter-btn.active,
-      .filter-btn:hover {
-        background: rgba(90, 168, 255, 0.12);
-        border-color: rgba(90, 168, 255, 0.2);
-        color: var(--primary);
-      }
-
-      .gallery-grid {
-        display: grid;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 16px;
-      }
-
-      .gallery-item {
-        width: 100%;
-        height: 180px;
-        object-fit: cover;
-        cursor: pointer;
-        border-radius: 12px;
-      }
-
-      .service-card {
-        padding: 24px 20px;
-      }
-
-      .service-card h3 {
-        color: var(--primary);
-        font-size: 1.2rem;
-        margin-bottom: 10px;
-      }
-
-      .service-card p {
-        color: var(--muted);
-      }
-
-      .service-icon {
-        width: 62px;
-        height: 62px;
-        border-radius: 18px;
-        display: grid;
-        place-items: center;
-        margin-bottom: 16px;
-        background: rgba(90, 168, 255, 0.12);
-        border: 1px solid rgba(90, 168, 255, 0.14);
-        color: var(--primary);
-      }
-
-      .stats-grid {
-        display: grid;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 16px;
-      }
-
-      .stat-card {
-        text-align: center;
-      }
-
-      .stat-card h3 {
-        color: var(--primary);
-        font-size: clamp(1.7rem, 3vw, 2.6rem);
-        margin-bottom: 8px;
-      }
-
-      .stat-card p {
-        color: var(--muted);
-      }
-
-      .contact-panel {
-        background: linear-gradient(135deg, rgba(17,24,39,0.9), rgba(15,22,36,0.95));
-        border:1px solid var(--border);
-        border-radius: 28px;
-        padding: 42px 28px;
-        box-shadow: var(--shadow);
-      }
-
-      .contact-panel h2 {
-        color: var(--primary);
-        font-size: clamp(2rem, 4vw, 2.8rem);
-        line-height: 1.1;
-        letter-spacing: -0.06em;
-        margin-bottom: 16px;
-      }
-
-      .contact-panel p {
-        color: var(--muted);
-      }
-
-      .contact-row {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 20px;
-        flex-wrap: wrap;
-        margin-top: 28px;
-      }
-
-      .contact-info {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 18px;
-      }
-
-      .contact-link {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        min-width: 120px;
-        padding: 12px 16px;
-        background: rgba(255,255,255,0.03);
-        border: 1px solid var(--border);
-        border-radius: 12px;
-        color: var(--primary);
-        font-weight: 600;
-      }
-
-      .site-footer {
-        padding: 28px 0 38px;
-      }
-
-      .footer-inner {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 16px;
-        flex-wrap: wrap;
-        border-top: 1px solid var(--border);
-        padding-top: 22px;
-      }
-
-      .footer-brand {
-        color: var(--primary);
-        font-weight: 700;
-      }
-
-      .footer-links {
-        display: flex;
-        gap: 16px;
-        flex-wrap: wrap;
-      }
-
-      .footer-links a {
-        color: var(--muted);
-      }
-
-      .lightbox {
-        position: fixed;
-        inset: 0;
-        background: rgba(2, 6, 23, 0.86);
-        display: none;
-        align-items: center;
-        justify-content: center;
-        z-index: 100;
-        padding: 16px;
-      }
-
-      .lightbox.show {
-        display: flex;
-      }
-
-      .lightbox-inner {
-        position: relative;
-        width: min(92vw, 900px);
-        background: rgba(13, 18, 29, 0.96);
-        border: 1px solid var(--border);
-        border-radius: 24px;
-        overflow: hidden;
-      }
-
-      .lightbox-inner img {
-        width: 100%;
-        max-height: 80vh;
-        object-fit: cover;
-      }
-
-      .lightbox-controls {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 12px 16px;
-        background: rgba(255,255,255,0.02);
-      }
-
-      .lightbox-nav {
-        display: flex;
-        gap: 10px;
-      }
-
-      .lightbox-nav button {
-        background: rgba(255,255,255,0.06);
-        border: 0;
-        color: var(--primary);
-        padding: 10px 14px;
-        border-radius: 10px;
-        font-weight: 700;
-        cursor: pointer;
-      }
-
-      .lightbox-title {
-        color: var(--primary);
-        font-weight: 700;
-      }
-
-      @media (max-width: 980px) {
-        .hero-inner,
-        .featured-project {
-          grid-template-columns: 1fr;
-        }
-
-        .cards-grid,
-        .stats-grid,
-        .gallery-grid {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
-      }
-
-      @media (max-width: 760px) {
-        .nav-links {
-          display: none;
-        }
-
-        .mobile-menu-toggle {
-          display: inline-flex;
-        }
-
-        .section {
-          padding: 78px 0;
-        }
-
-        .cta-group {
-          flex-direction: column;
-          align-items: stretch;
-        }
-
-        .cards-grid,
-        .gallery-grid,
-        .stats-grid {
-          grid-template-columns: 1fr;
-        }
-
-        .contact-row {
-          flex-direction: column;
-          align-items: flex-start;
-        }
-      }
-
-      @media (max-width: 500px) {
-        .hero {
-          padding-top: 52px;
-        }
-
-        .hero-copy h1 {
-          font-size: clamp(2.5rem, 10vw, 3.4rem);
-        }
-
-        .primary-btn,
-        .secondary-btn,
-        .nav-cta {
-          width: 100%;
-        }
-
-        .cta-group {
-          flex-direction: column;
-        }
-
-        .mobile-menu-toggle {
-          display: inline-flex;
-        }
-      }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
@@ -801,20 +23,10 @@
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
+          <a href="#projects">Wasla</a>
           <a href="#services">Services</a>
-          <a href="#gallery">Gallery</a>
           <a href="#contact">Contact</a>
         </nav>
-
-        <button
-          class="mobile-menu-toggle"
-          aria-label="Open menu"
-          style="display:none; border:0; background:transparent; color: var(--primary); font-size: 1.8rem; cursor:pointer;"
-        >
-          ☰
-        </button>
-
         <a href="#contact" class="nav-cta">Hire Me</a>
       </div>
     </header>
@@ -825,21 +37,18 @@
           <div class="hero-copy">
             <span class="eyebrow">Malak Mohamed</span>
             <h1>Web & Mobile App Developer</h1>
-            <p>
-              I design and develop modern websites, mobile applications, and digital systems that are simple, practical, and user-friendly.
-            </p>
+            <p>Building modern digital solutions. Expert in web development, mobile apps, and business systems like Wasla.</p>
             <div class="cta-group">
-              <a href="#projects" class="primary-btn">View Projects</a>
+              <a href="#projects" class="primary-btn">View Wasla Project</a>
               <a href="#contact" class="secondary-btn">Hire Me</a>
             </div>
-            <div class="hero-tags" aria-label="Highlights">
+            <div class="hero-tags">
               <span>Web & Mobile</span>
-              <span>Modern Interfaces</span>
+              <span>UI/UX Design</span>
               <span>Business Systems</span>
             </div>
           </div>
-
-          <div class="hero-visual" aria-label="Developer profile visual">
+          <div class="hero-visual">
             <div class="profile-card">
               <div class="status-pill">Available for Work</div>
               <div class="code-panel">
@@ -851,7 +60,7 @@
                 <pre><code>const malak = {
   name: "Malak Mohamed",
   focus: ["Web", "Mobile", "UI/UX"],
-  projects: ["Wasla", "Business Systems", "Custom Platforms"]
+  bestProject: "Wasla"
 };</code></pre>
               </div>
             </div>
@@ -863,16 +72,11 @@
         <div class="container grid-2">
           <div class="section-header">
             <span class="section-tag">About Me</span>
-            <h2 class="section-title">Turning ideas into practical digital experiences.</h2>
+            <h2 class="section-title">Digital Solutions Expert</h2>
           </div>
-
           <div class="about-copy">
-            <p>
-              I work in Web Development, Mobile App Development, UI/UX, Database Systems, and Business Applications.
-            </p>
-            <p>
-              I build interfaces and platforms that are clean, efficient, and easy to use, focusing on real-world solutions that support users and businesses.
-            </p>
+            <p>I develop web applications, mobile apps, and business management systems with focus on clean code and user experience.</p>
+            <p>My flagship project is Wasla - a comprehensive business management platform that helps organizations streamline operations.</p>
           </div>
         </div>
       </section>
@@ -881,68 +85,61 @@
         <div class="container">
           <div class="section-header" style="text-align: center;">
             <span class="section-tag">Tech Stack</span>
-            <h2 class="section-title">Tools and technologies I use.</h2>
+            <h2 class="section-title">Skills & Technologies</h2>
           </div>
-
           <div class="cards-grid">
             <article class="skill-card">
-              <h3>Programming</h3>
+              <h3>Languages</h3>
               <ul>
                 <li>Java</li>
                 <li>Python</li>
-                <li>C++</li>
                 <li>JavaScript</li>
+                <li>C++</li>
               </ul>
             </article>
-
             <article class="skill-card">
-              <h3>Web Development</h3>
+              <h3>Web</h3>
               <ul>
-                <li>HTML</li>
-                <li>CSS</li>
+                <li>HTML & CSS</li>
                 <li>JavaScript</li>
                 <li>Bootstrap</li>
-                <li>Responsive Web Design</li>
+                <li>Responsive Design</li>
               </ul>
             </article>
-
             <article class="skill-card">
-              <h3>Mobile Development</h3>
+              <h3>Mobile & Desktop</h3>
               <ul>
-                <li>Mobile Applications</li>
-                <li>Desktop Applications</li>
-                <li>Application UI Design</li>
-                <li>Application Development</li>
+                <li>Mobile Apps</li>
+                <li>Desktop Apps</li>
+                <li>UI Design</li>
+                <li>App Architecture</li>
               </ul>
             </article>
-
             <article class="skill-card">
               <h3>Database</h3>
               <ul>
                 <li>SQL</li>
-                <li>Oracle Database</li>
+                <li>Oracle DB</li>
                 <li>Database Design</li>
                 <li>Data Management</li>
               </ul>
             </article>
-
+            <article class="skill-card">
+              <h3>Design</h3>
+              <ul>
+                <li>UI/UX Design</li>
+                <li>Graphic Design</li>
+                <li>Figma</li>
+                <li>Adobe Suite</li>
+              </ul>
+            </article>
             <article class="skill-card">
               <h3>Tools</h3>
               <ul>
                 <li>VS Code</li>
+                <li>Git & GitHub</li>
                 <li>NetBeans</li>
-                <li>Git</li>
-                <li>GitHub</li>
-              </ul>
-            </article>
-
-            <article class="skill-card">
-              <h3>UI/UX</h3>
-              <ul>
-                <li>UI/UX Design</li>
-                <li>User Interface Design</li>
-                <li>Graphic Design</li>
-                <li>Social Media Design</li>
+                <li>Figma</li>
               </ul>
             </article>
           </div>
@@ -957,107 +154,32 @@
           </div>
 
           <div class="featured-project">
-            <img
-              src="https://placehold.co/900x600/0b1020/edf2ff?text=Wasla+Business+Management"
-              alt="Wasla project preview"
-            />
-            <div class="project-copy">
+            <div class="featured-image">
+              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=900&h=600&fit=crop" alt="Wasla Business Management System" />
+            </div>
+            <div class="featured-content">
               <h3>Wasla</h3>
-              <p>
-                A complete business management system designed to help organizations manage products, sales, purchases, customers, suppliers, and inventory in one integrated platform.
-              </p>
-              <div class="project-list">
-                <li>Sales and purchase tracking</li>
-                <li>Inventory management</li>
-                <li>Customer and supplier records</li>
-                <li>Business workflow organization</li>
-                <li>Reporting and data management</li>
+              <p>A complete business management platform designed to help organizations manage sales, purchases, inventory, customers, and suppliers in one integrated system.</p>
+              <h4>Key Features:</h4>
+              <ul class="features-list">
+                <li>Sales & Purchase Tracking</li>
+                <li>Inventory Management</li>
+                <li>Customer Relations</li>
+                <li>Supplier Management</li>
+                <li>Business Analytics</li>
+                <li>Data Reports</li>
+              </ul>
+              <div class="project-meta">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Database</span>
               </div>
               <div class="project-actions">
-                <a href="https://waslaapp.de.deplexo.com" class="primary-btn" target="_blank" rel="noreferrer">View Project</a>
+                <a href="https://waslaapp.de.deplexo.com" class="primary-btn" target="_blank" rel="noreferrer">View Live Project</a>
+                <a href="#contact" class="secondary-btn">Learn More</a>
               </div>
             </div>
-          </div>
-
-          <div class="section-header" style="margin-top: 40px;">
-            <span class="section-tag">Projects</span>
-            <h2 class="section-title">More projects.</h2>
-          </div>
-
-          <div class="cards-grid" style="margin-top: 24px;">
-            <article class="project-card">
-              <div class="project-card-image">WASLA</div>
-              <div class="project-card-content">
-                <h3>Wasla</h3>
-                <p>
-                  A business management application designed to help businesses manage products, sales, purchases, customers, suppliers, and inventory in one place.
-                </p>
-                <div class="project-meta">
-                  <span>HTML</span>
-                  <span>CSS</span>
-                  <span>JavaScript</span>
-                  <span>Database</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="project-card-image">TASK</div>
-              <div class="project-card-content">
-                <h3>Personal Task Manager</h3>
-                <p>
-                  A task management application developed using Java and Oracle Database, focused on organization and productivity.
-                </p>
-                <div class="project-meta">
-                  <span>Java</span>
-                  <span>Java Swing</span>
-                  <span>Oracle DB</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="project-card-image">UI/UX</div>
-              <div class="project-card-content">
-                <h3>UI/UX Projects</h3>
-                <p>
-                  Concept design and interface work focused on clean user experiences and digital product thinking.
-                </p>
-                <div class="project-meta">
-                  <span>Figma</span>
-                  <span>Adobe</span>
-                  <span>UI</span>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="gallery" class="section">
-        <div class="container">
-          <div class="section-header" style="text-align: center;">
-            <span class="section-tag">Selected Work</span>
-            <h2 class="section-title">Gallery</h2>
-          </div>
-
-          <div class="gallery-filter" aria-label="Gallery filters">
-            <button class="filter-btn active" type="button" data-filter="all">All</button>
-            <button class="filter-btn" type="button" data-filter="web">Web</button>
-            <button class="filter-btn" type="button" data-filter="apps">Apps</button>
-            <button class="filter-btn" type="button" data-filter="uiux">UI/UX</button>
-            <button class="filter-btn" type="button" data-filter="branding">Branding</button>
-          </div>
-
-          <div class="gallery-grid">
-            <img class="gallery-item" data-category="web" src="https://placehold.co/600x500/0b1020/edf2ff?text=Wasla" alt="Wasla project" loading="lazy" />
-            <img class="gallery-item" data-category="apps" src="https://placehold.co/600x500/0b1020/edf2ff?text=App+Preview" alt="App preview" loading="lazy" />
-            <img class="gallery-item" data-category="uiux" src="https://placehold.co/600x500/0b1020/edf2ff?text=UI%2FUX" alt="UI/UX design" loading="lazy" />
-            <img class="gallery-item" data-category="branding" src="https://placehold.co/600x500/0b1020/edf2ff?text=Branding" alt="Branding preview" loading="lazy" />
-            <img class="gallery-item" data-category="web" src="https://placehold.co/600x500/0b1020/edf2ff?text=Web+Project" alt="Web project" loading="lazy" />
-            <img class="gallery-item" data-category="apps" src="https://placehold.co/600x500/0b1020/edf2ff?text=Mobile+App" alt="Mobile app preview" loading="lazy" />
-            <img class="gallery-item" data-category="uiux" src="https://placehold.co/1000x800/0b1020/edf2ff?text=UI%2FUX+Project" alt="UI/UX project" loading="lazy" />
-            <img class="gallery-item" data-category="branding" src="https://placehold.co/600x500/0b1020/edf2ff?text=Branding+Concept" alt="Branding concept" loading="lazy" />
           </div>
         </div>
       </section>
@@ -1066,86 +188,28 @@
         <div class="container">
           <div class="section-header" style="text-align: center;">
             <span class="section-tag">Services</span>
-            <h2 class="section-title">What I can build for you.</h2>
+            <h2 class="section-title">What I Build</h2>
           </div>
-
           <div class="cards-grid">
             <article class="service-card">
-              <div class="service-icon">Web</div>
+              <div class="service-icon">W</div>
               <h3>Web Development</h3>
-              <p>Building modern, responsive, and high-performing websites and web applications.</p>
+              <p>Modern, responsive websites and web applications built with clean code.</p>
             </article>
-
             <article class="service-card">
-              <div class="service-icon">App</div>
-              <h3>Mobile App Development</h3>
-              <p>Designing and developing practical mobile applications that solve real business needs.</p>
+              <div class="service-icon">M</div>
+              <h3>Mobile Apps</h3>
+              <p>Cross-platform mobile applications that solve real business problems.</p>
             </article>
-
             <article class="service-card">
-              <div class="service-icon">UX</div>
-              <h3>UI/UX Design</h3>
-              <p>Creating clean and user-friendly interfaces that improve usability and interactions.</p>
-            </article>
-
-            <article class="service-card">
-              <div class="service-icon">DB</div>
-              <h3>Business & Database Systems</h3>
-              <p>Designing and implementing systems that organize data, processes, and business operations.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <div class="section-header" style="text-align: center;">
-            <span class="section-tag">Achievements</span>
-            <h2 class="section-title">Certificates & achievements.</h2>
-          </div>
-
-          <div class="cards-grid">
-            <article class="service-card">
-              <div class="service-icon">Cert</div>
-              <h3>Certificates</h3>
-              <p>Ready to feature your certificates and achievements when available.</p>
-            </article>
-
-            <article class="service-card">
-              <div class="service-icon">Award</div>
-              <h3>Achievements</h3>
-              <p>Ready to feature your achievements and certificates when available.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <div class="section-header" style="text-align: center;">
-            <span class="section-tag">Stats</span>
-            <h2 class="section-title">This is how I work.</h2>
-          </div>
-
-          <div class="stats-grid">
-            <article class="stat-card">
-              <h3>Web & Mobile</h3>
-              <p>Custom digital solutions</p>
-            </article>
-
-            <article class="stat-card">
-              <h3>Custom Solutions</h3>
-              <p>Business-first thinking</p>
-            </article>
-
-            <article class="stat-card">
-              <h3>Modern Interfaces</h3>
-              <p>Clean user experiences</p>
-            </article>
-
-            <article class="stat-card">
+              <div class="service-icon">D</div>
               <h3>Business Systems</h3>
-              <p>Data-driven operations</p>
+              <p>Enterprise solutions like Wasla for managing complex business operations.</p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon">U</div>
+              <h3>UI/UX Design</h3>
+              <p>Clean, intuitive interfaces that enhance user experience.</p>
             </article>
           </div>
         </div>
@@ -1154,17 +218,16 @@
       <section id="contact" class="section">
         <div class="container">
           <div class="contact-panel">
-            <span class="section-tag">Let's Work Together</span>
-            <h2>Have an idea for a website or application?</h2>
-            <p>Let's turn your idea into a digital product that works.</p>
-
-            <div class="contact-row">
-              <div class="contact-info">
-                <a class="contact-link" href="https://github.com/66191-sys" target="_blank" rel="noreferrer">GitHub</a>
-                <a class="contact-link" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
-                <a class="contact-link" href="https://wa.me/0000000000" target="_blank" rel="noreferrer">WhatsApp</a>
-                <a class="contact-link" href="mailto:hello@malakdev.com">Email</a>
-              </div>
+            <div class="contact-header">
+              <span class="section-tag">Get In Touch</span>
+              <h2>Ready to Start Your Project?</h2>
+              <p>Let's build something amazing together.</p>
+            </div>
+            <div class="contact-links">
+              <a href="https://github.com/66191-sys" class="contact-link" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://www.linkedin.com/" class="contact-link" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="https://wa.me/201001234567" class="contact-link" target="_blank" rel="noreferrer">WhatsApp</a>
+              <a href="mailto:hello@malakdev.com" class="contact-link">Email</a>
             </div>
           </div>
         </div>
@@ -1173,136 +236,12 @@
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <div class="footer-brand">Malak.</div>
-        <div class="footer-links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#services">Services</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#contact">Contact</a>
-        </div>
+        <div class="footer-brand">Malak Mohamed</div>
+        <div class="footer-text">Web & Mobile Developer | Wasla Creator</div>
+        <div class="footer-year">2024 - <span id="year"></span></div>
       </div>
     </footer>
 
-    <div class="lightbox" id="lightbox" aria-hidden="true">
-      <div class="lightbox-inner">
-        <img id="lightbox-image" src="" alt="" />
-        <div class="lightbox-controls">
-          <div class="lightbox-title" id="lightbox-title">Preview</div>
-          <div class="lightbox-nav">
-            <button type="button" id="prevBtn" aria-label="Previous image">Previous</button>
-            <button type="button" id="nextBtn" aria-label="Next image">Next</button>
-            <button type="button" id="closeBtn" aria-label="Close">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <script>
-      const galleryItems = Array.from(document.querySelectorAll('.gallery-item'));
-      const lightbox = document.getElementById('lightbox');
-      const lightboxImage = document.getElementById('lightbox-image');
-      const lightboxTitle = document.getElementById('lightbox-title');
-      const closeBtn = document.getElementById('closeBtn');
-      const prevBtn = document.getElementById('prevBtn');
-      const nextBtn = document.getElementById('nextBtn');
-      const filterButtons = Array.from(document.querySelectorAll('.filter-btn'));
-
-      let activeIndex = 0;
-
-      const openLightbox = (index) => {
-        const item = galleryItems[index];
-        if (!item) return;
-        lightboxImage.src = item.src;
-        lightboxImage.alt = item.alt;
-        lightboxTitle.textContent = item.alt;
-        lightbox.classList.add('show');
-        lightbox.setAttribute('aria-hidden', 'false');
-      };
-
-      const closeLightbox = () => {
-        lightbox.classList.remove('show');
-        lightbox.setAttribute('aria-hidden', 'true');
-      };
-
-      const prevImage = () => {
-        if (!galleryItems.length) return;
-        const visibleItems = galleryItems.filter(item => item.style.display !== 'none');
-        if (!visibleItems.length) return;
-        const currentIndex = visibleItems.findIndex(item => item.classList.contains('active-lightbox'));
-        let nextIndex = 0;
-        if (currentIndex !== -1) {
-          nextIndex = (currentIndex - 1 + visibleItems.length) % visibleItems.length;
-        }
-        const item = visibleItems[nextIndex];
-        if (item) {
-          item.classList.add('active-lightbox');
-          openLightbox(galleryItems.indexOf(item));
-        }
-      };
-
-      const nextImage = () => {
-        if (!galleryItems.length) return;
-        const visibleItems = galleryItems.filter(item => item.style.display !== 'none');
-        if (!visibleItems.length) return;
-        const currentIndex = visibleItems.findIndex(item => item.classList.contains('active-lightbox'));
-        let nextIndex = 0;
-        if (currentIndex !== -1) {
-          nextIndex = (currentIndex + 1) % visibleItems.length;
-        }
-        const item = visibleItems[nextIndex];
-        if (item) {
-          item.classList.add('active-lightbox');
-          openLightbox(galleryItems.indexOf(item));
-        }
-      };
-
-      prevBtn.addEventListener('click', prevImage);
-      nextBtn.addEventListener('click', nextImage);
-      closeBtn.addEventListener('click', closeLightbox);
-
-      filterButtons.forEach((btn) => {
-        btn.addEventListener('click', () => {
-          filterButtons.forEach((btnItem) => btnItem.classList.remove('active'));
-          btn.classList.add('active');
-
-          galleryItems.forEach((item) => {
-            const isVisible = btn.dataset.filter === 'all' || item.dataset.category === btn.dataset.filter;
-            item.style.display = isVisible ? 'block' : 'none';
-          });
-
-          const visibleItems = galleryItems.filter(item => item.style.display !== 'none');
-          if (visibleItems.length > 0) {
-            visibleItems[0].classList.add('active-lightbox');
-          }
-        });
-      });
-
-      const menuButton = document.querySelector('.mobile-menu-toggle');
-      const navLinks = document.querySelector('.nav-links');
-
-      if (menuButton) {
-        menuButton.addEventListener('click', () => {
-          navLinks.classList.toggle('show');
-        });
-      }
-
-      document.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape') {
-          closeLightbox();
-        }
-      });
-
-      galleryItems.forEach((item, index) => {
-        item.addEventListener('click', () => {
-          item.classList.add('active-lightbox');
-          openLightbox(index);
-        });
-      });
-
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
